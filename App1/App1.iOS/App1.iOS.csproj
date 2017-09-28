@@ -128,15 +128,15 @@
     <None Include="Entitlements.plist" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ViewHolders\CallHistoryController.cs" />
-    <Compile Include="ViewHolders\CallHistoryController.designer.cs">
+    <Compile Include="ViewControllers\CallHistoryController.cs" />
+    <Compile Include="ViewControllers\CallHistoryController.designer.cs">
       <DependentUpon>CallHistoryController.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Classes\PhoneTranslator.cs" />
-    <Compile Include="ViewHolders\ViewController.cs" />
-    <Compile Include="ViewHolders\ViewController.designer.cs">
+    <Compile Include="ViewControllers\ViewController.cs" />
+    <Compile Include="ViewControllers\ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
   </ItemGroup>

@@ -34,7 +34,7 @@ namespace App1.iOS
 
         }
 
-        public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
+        public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)//Pass data between viewcontrollers using segue
         {
             base.PrepareForSegue(segue, sender);
 
@@ -96,6 +96,6 @@ namespace App1.iOS
             }
 
         }
-    }
+     }
 }
 

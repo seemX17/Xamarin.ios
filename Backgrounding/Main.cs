@@ -1,6 +1,6 @@
 ﻿using UIKit;
 
-namespace App2
+namespace Backgrounding
 {
     public class Application
     {
