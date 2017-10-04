@@ -24,37 +24,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="439" translatesAutoresizingMaskIntoConstraints="NO" text="latitude:">
-                                <rect key="frame" x="50" y="163" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="440" translatesAutoresizingMaskIntoConstraints="NO" text="longitude:">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="440" translatesAutoresizingMaskIntoConstraints="NO" text="longitude:" fixedFrame="YES">
                                 <rect key="frame" x="50" y="210" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="441" translatesAutoresizingMaskIntoConstraints="NO" text="altitude:">
-                                <rect key="frame" x="50" y="265" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="442" translatesAutoresizingMaskIntoConstraints="NO" text="Courses:">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="442" translatesAutoresizingMaskIntoConstraints="NO" text="Courses:" fixedFrame="YES">
                                 <rect key="frame" x="50" y="312" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="443" translatesAutoresizingMaskIntoConstraints="NO" text="Speed:">
-                                <rect key="frame" x="50" y="370" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="716" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="716" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
                                 <rect key="frame" x="104" y="51" width="146" height="57"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <nil key="textColor"/>
@@ -63,38 +45,35 @@
                                     <constraint id="725" firstItem="716" firstAttribute="height" constant="21"/>
                                 </constraints>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="726" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" text="Latitude:">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="726" translatesAutoresizingMaskIntoConstraints="NO" text="Latitude:">
                                 <rect key="frame" x="27" y="178" width="76" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="2514" firstAttribute="width" constant="76"/>
+                                </constraints>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="730" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" text="Longitude:">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="730" translatesAutoresizingMaskIntoConstraints="NO" text="Longitude:" fixedFrame="YES">
                                 <rect key="frame" x="16" y="255" width="87" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="731" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" text="Altitude:">
-                                <rect key="frame" x="0.0" y="323" width="103" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="731" translatesAutoresizingMaskIntoConstraints="NO" text="Altitude:" fixedFrame="YES">
+                                <rect key="frame" x="27" y="323" width="76" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="732" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="732" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="9" y="396" width="94" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="733" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" text="Speed:">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="733" translatesAutoresizingMaskIntoConstraints="NO" text="Speed:" fixedFrame="YES">
                                 <rect key="frame" x="9" y="465" width="94" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[lat]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1028" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
-                                <rect key="frame" x="139" y="178" width="102" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -135,107 +114,41 @@
                                     <constraint id="1104" firstAttribute="width" constant="102"/>
                                 </constraints>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2470" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="139" y="178" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="222"/>
-                                <exclude reference="439"/>
                                 <exclude reference="440"/>
-                                <exclude reference="441"/>
                                 <exclude reference="442"/>
-                                <exclude reference="443"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="438"/>
-                                <exclude reference="448"/>
-                                <exclude reference="450"/>
-                                <exclude reference="451"/>
-                                <exclude reference="453"/>
                                 <exclude reference="454"/>
-                                <exclude reference="455"/>
-                                <exclude reference="456"/>
-                                <exclude reference="457"/>
-                                <exclude reference="458"/>
-                                <exclude reference="459"/>
-                                <exclude reference="460"/>
-                                <exclude reference="461"/>
-                                <exclude reference="462"/>
-                                <exclude reference="463"/>
-                                <exclude reference="464"/>
-                                <exclude reference="465"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="222"/>
-                                <include reference="439"/>
                                 <include reference="440"/>
-                                <include reference="441"/>
                                 <include reference="442"/>
-                                <include reference="443"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="438"/>
-                                <include reference="448"/>
-                                <include reference="450"/>
-                                <include reference="451"/>
-                                <include reference="453"/>
                                 <include reference="454"/>
-                                <include reference="455"/>
-                                <include reference="456"/>
-                                <include reference="457"/>
-                                <include reference="458"/>
-                                <include reference="459"/>
-                                <include reference="460"/>
-                                <include reference="461"/>
-                                <include reference="462"/>
-                                <include reference="463"/>
-                                <include reference="464"/>
-                                <include reference="465"/>
                             </mask>
                         </variation>
                         <constraints>
                             <constraint id="438" firstItem="222" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
-                            <constraint id="448" firstItem="440" firstAttribute="top" secondItem="439" secondAttribute="bottom" constant="26">
-                                <variation key="heightClass=regular-widthClass=compact" constant="36"/>
-                            </constraint>
-                            <constraint id="450" firstItem="442" firstAttribute="top" secondItem="441" secondAttribute="bottom" constant="26">
-                                <variation key="heightClass=regular-widthClass=compact" constant="36"/>
-                            </constraint>
-                            <constraint id="451" firstItem="443" firstAttribute="top" secondItem="442" secondAttribute="bottom" constant="37">
-                                <variation key="heightClass=regular-widthClass=compact" constant="36"/>
-                            </constraint>
-                            <constraint id="453" firstItem="439" firstAttribute="top" secondItem="222" secondAttribute="bottom" constant="63"/>
                             <constraint id="454" firstItem="222" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="60"/>
-                            <constraint id="455" firstItem="439" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="34"/>
-                            <constraint id="456" firstItem="440" firstAttribute="leading" secondItem="439" secondAttribute="leading"/>
-                            <constraint id="457" firstItem="441" firstAttribute="top" secondItem="440" secondAttribute="bottom" constant="34">
-                                <variation key="heightClass=regular-widthClass=compact" constant="36"/>
-                            </constraint>
-                            <constraint id="458" firstItem="441" firstAttribute="leading" secondItem="440" secondAttribute="leading"/>
-                            <constraint id="459" firstItem="442" firstAttribute="leading" secondItem="441" secondAttribute="leading"/>
-                            <constraint id="460" firstItem="443" firstAttribute="leading" secondItem="442" secondAttribute="leading"/>
-                            <constraint id="461" firstItem="440" firstAttribute="width" secondItem="439" secondAttribute="width"/>
-                            <constraint id="462" firstItem="441" firstAttribute="width" secondItem="440" secondAttribute="width"/>
-                            <constraint id="463" firstItem="442" firstAttribute="width" secondItem="441" secondAttribute="width"/>
-                            <constraint id="464" firstItem="443" firstAttribute="width" secondItem="442" secondAttribute="width" multiplier="0.3"/>
-                            <constraint id="465" firstItem="443" firstAttribute="width" secondItem="442" secondAttribute="width"/>
                             <constraint id="723" firstItem="716" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="52"/>
                             <constraint id="724" firstItem="716" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
-                            <constraint id="727" firstItem="726" firstAttribute="top" secondItem="716" secondAttribute="bottom" constant="70"/>
-                            <constraint id="728" firstItem="726" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45"/>
                             <constraint id="729" firstItem="8bC-Xf-vdC" firstAttribute="trailingMargin" secondItem="716" secondAttribute="trailing" constant="109"/>
-                            <constraint id="734" firstItem="730" firstAttribute="top" secondItem="726" secondAttribute="bottom" constant="36"/>
-                            <constraint id="735" firstItem="731" firstAttribute="top" secondItem="730" secondAttribute="bottom" constant="36"/>
-                            <constraint id="736" firstItem="732" firstAttribute="top" secondItem="731" secondAttribute="bottom" constant="36"/>
-                            <constraint id="737" firstItem="733" firstAttribute="top" secondItem="732" secondAttribute="bottom" constant="36"/>
-                            <constraint id="738" firstItem="730" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45"/>
-                            <constraint id="739" firstItem="731" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45"/>
-                            <constraint id="740" firstItem="732" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45"/>
-                            <constraint id="741" firstItem="733" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45"/>
-                            <constraint id="1039" firstItem="1028" firstAttribute="leading" secondItem="726" secondAttribute="trailing" constant="36"/>
-                            <constraint id="1044" firstItem="1028" firstAttribute="top" secondItem="716" secondAttribute="bottom" constant="70"/>
-                            <constraint id="1045" firstItem="1028" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="2"/>
                             <constraint id="1096" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="1030" secondAttribute="trailing" constant="134"/>
                             <constraint id="1097" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="1030" secondAttribute="bottom" constant="323"/>
                             <constraint id="1099" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="1031" secondAttribute="trailing" constant="134"/>
@@ -244,14 +157,19 @@
                             <constraint id="1103" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="1032" secondAttribute="bottom" constant="181"/>
                             <constraint id="1105" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="1029" secondAttribute="trailing" constant="134"/>
                             <constraint id="1106" firstItem="1029" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="255"/>
+                            <constraint id="2508" firstItem="2470" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="158"/>
+                            <constraint id="2509" firstItem="1029" firstAttribute="top" secondItem="2470" secondAttribute="bottom" constant="56"/>
+                            <constraint id="2511" firstItem="8bC-Xf-vdC" firstAttribute="trailingMargin" secondItem="2470" secondAttribute="trailing" constant="161"/>
+                            <constraint id="2512" firstItem="726" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="27"/>
+                            <constraint id="2513" firstItem="726" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="178"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="LblAltitude" destination="1028" id="name-outlet-1028"/>
                         <outlet property="LblLongitude" destination="1029" id="name-outlet-1029"/>
-                        <outlet property="LblLatitude" destination="1030" id="name-outlet-1030"/>
+                        <outlet property="LblAltitude" destination="1030" id="name-outlet-1030"/>
                         <outlet property="LblCourse" destination="1031" id="name-outlet-1031"/>
                         <outlet property="LblSpeed" destination="1032" id="name-outlet-1032"/>
+                        <outlet property="LblLatitude" destination="2470" id="name-outlet-2470"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

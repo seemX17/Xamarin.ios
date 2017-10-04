@@ -1,6 +1,6 @@
 ﻿using UIKit;
 
-namespace khanaval
+namespace TableView
 {
     public class Application
     {

@@ -5,7 +5,7 @@
 //
 using Foundation;
 
-namespace khanaval
+namespace TableView
 {
     [Register("ViewController")]
     partial class ViewController

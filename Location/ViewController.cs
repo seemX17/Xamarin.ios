@@ -7,20 +7,6 @@ namespace Location
 {
     public partial class ViewController : UIViewController
     {
-        public override void ViewDidLoad()
-        {
-            base.ViewDidLoad();
-            // Perform any additional setup after loading the view, typically from a nib.
-            // It is better to handle this with notifications, so that the UI updates
-            // resume when the application re-enters the foreground!
-            Manager.LocationUpdated += HandleLocationChanged;
-        }
-
-        public override void DidReceiveMemoryWarning()
-        {
-            base.DidReceiveMemoryWarning();
-            // Release any cached data, images, etc that aren't in use.
-        }
 
         #region Computed Properties
         public static bool UserInterfaceIdiomIsPhone
@@ -36,9 +22,16 @@ namespace Location
         {
             // As soon as the app is done launching, begin generating location updates in the location manager
             Manager = new LocationManager();
-          //  Manager.StartLocationUpdates();
+            Manager.StartLocationUpdates();
         }
+        #endregion
 
+        #region Override Methods
+        public override void DidReceiveMemoryWarning()
+        {
+            base.DidReceiveMemoryWarning();
+            // Release any cached data, images, etc that aren't in use.
+        }
         #endregion
 
         #region Public Methods
@@ -57,5 +50,30 @@ namespace Location
         }
 
         #endregion
+
+        #region View Lifecycle
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+            // Perform any additional setup after loading the view, typically from a nib.
+
+            // It is better to handle this with notifications, so that the UI updates
+            // resume when the application re-enters the foreground!
+            //Manager.LocationUpdated += HandleLocationChanged;
+
+            // Screen subscribes to the location changed event
+            UIApplication.Notifications.ObserveDidBecomeActive((sender, args) => {
+                Manager.LocationUpdated += HandleLocationChanged;
+            });
+
+            // Whenever the app enters the background state, we unsubscribe from the event 
+            // so we no longer perform foreground updates
+            UIApplication.Notifications.ObserveDidEnterBackground((sender, args) => {
+                Manager.LocationUpdated -= HandleLocationChanged;
+            });
+        }
+        #endregion
+
     }
+
 }
