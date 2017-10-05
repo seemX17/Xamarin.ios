@@ -14,7 +14,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="144" translatesAutoresizingMaskIntoConstraints="NO" image="img1.jpg" misplaced="YES">
-                        <rect key="frame" x="6" y="14" width="203" height="97"/>
+                        <rect key="frame" x="16" y="14" width="193" height="97"/>
                         <constraints>
                             <constraint id="179" firstItem="144" firstAttribute="width" constant="240"/>
                         </constraints>
@@ -38,10 +38,15 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="label1" destination="615" id="name-outlet-615"/>
+                <outlet property="imageView1" destination="144" id="name-outlet-144"/>
             </connections>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="img1.jpg" width="1920" height="1080"/>
+        <image name="Images/img1.jpg" width="1920" height="1080"/>
+        <image name="Images/img2.jpg" width="1366" height="768"/>
+        <image name="Images/img3.jpg" width="1366" height="768"/>
+        <image name="Images/img4.jpg" width="1920" height="1080"/>
+        <image name="Images/img5.jpg" width="1920" height="1080"/>
     </resources>
 </document>

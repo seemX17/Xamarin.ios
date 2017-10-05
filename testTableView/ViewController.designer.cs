@@ -15,10 +15,19 @@ namespace testTableView
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIImageView ImageviewMain { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         testTableView.myTableView mytableView1 { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
+            if (ImageviewMain != null) {
+                ImageviewMain.Dispose ();
+                ImageviewMain = null;
+            }
+
             if (mytableView1 != null) {
                 mytableView1.Dispose ();
                 mytableView1 = null;

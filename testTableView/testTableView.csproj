@@ -105,7 +105,7 @@
     </Compile>
     <Compile Include="ViewController.cs" />
     <InterfaceDefinition Include="Main.storyboard" />
-    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
+    <InterfaceDefinition Include="LaunchScreen.xib" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -115,7 +115,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Entitlements.plist" />
-    <BundleResource Include="Resources\img1.jpg" />
+    <BundleResource Include="Images\img1.jpg" />
+    <BundleResource Include="Images\img5.jpg" />
+    <BundleResource Include="Images\img2.jpg" />
+    <BundleResource Include="Images\img3.jpg" />
+    <BundleResource Include="Images\img4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

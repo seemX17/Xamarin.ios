@@ -24,6 +24,13 @@ namespace testTableView
 
         public string label1txt { set { label1.Text = value; } }
 
+        public string ImageImg { set {
+               // imageView1.Image = UIImage.FromFile(value);
+                imageView1.Image = UIImage.FromFile("Images/"+value);
+
+            }
+        }
+
         internal static UITableViewCell Create()
         {
             return (myTableCell)Nib.Instantiate(null, null)[0];
