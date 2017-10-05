@@ -13,27 +13,30 @@
                 <rect key="frame" x="0.0" y="0.0" width="333" height="125"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="144" translatesAutoresizingMaskIntoConstraints="NO" image="img1.jpg" misplaced="YES">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="144" translatesAutoresizingMaskIntoConstraints="NO" image="img1.jpg">
                         <rect key="frame" x="16" y="14" width="193" height="97"/>
                         <constraints>
-                            <constraint id="179" firstItem="144" firstAttribute="width" constant="240"/>
+                            <constraint id="1430" firstItem="144" firstAttribute="width" constant="193"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="615" translatesAutoresizingMaskIntoConstraints="NO">
-                        <rect key="frame" x="217" y="58" width="83" height="21"/>
+                        <rect key="frame" x="224" y="52" width="109" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
+                        <constraints>
+                            <constraint id="1402" firstItem="615" firstAttribute="width" constant="109"/>
+                            <constraint id="1416" firstItem="615" firstAttribute="height" constant="21"/>
+                        </constraints>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint id="161" firstItem="144" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="23"/>
-                    <constraint id="173" firstItem="YTl-1W-gDM" firstAttribute="bottom" secondItem="144" secondAttribute="bottom" constant="23"/>
-                    <constraint id="595" firstItem="YTl-1W-gDM" firstAttribute="trailing" secondItem="144" secondAttribute="trailing" constant="124"/>
-                    <constraint id="645" firstItem="615" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="217"/>
-                    <constraint id="652" firstItem="615" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="58"/>
-                    <constraint id="659" firstItem="YTl-1W-gDM" firstAttribute="bottom" secondItem="615" secondAttribute="bottom" constant="46"/>
-                    <constraint id="666" firstItem="YTl-1W-gDM" firstAttribute="trailing" secondItem="615" secondAttribute="trailing" constant="33"/>
+                    <constraint id="1360" firstItem="144" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY"/>
+                    <constraint id="1374" firstItem="615" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY"/>
+                    <constraint id="1388" firstItem="144" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="top" constant="14"/>
+                    <constraint id="1444" firstItem="YTl-1W-gDM" firstAttribute="bottom" secondItem="144" secondAttribute="bottom" constant="14"/>
+                    <constraint id="1458" firstItem="144" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leading" constant="16"/>
+                    <constraint id="1472" firstItem="615" firstAttribute="leading" secondItem="144" secondAttribute="trailing" constant="15"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

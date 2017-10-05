@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Location", "Location\Locati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableView", "TableView\TableView.csproj", "{9D1AD12F-4893-4471-B5B5-F7F976222765}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomTableView", "CustomTableView\CustomTableView.csproj", "{EA4EF36B-35D4-4057-9150-A5129987BE1A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testTableView", "testTableView\testTableView.csproj", "{65455FC5-5B16-4195-82FD-30F8156ECFEB}"
 EndProject
 Global
@@ -113,26 +111,6 @@ Global
 		{9D1AD12F-4893-4471-B5B5-F7F976222765}.Release|iPhone.Build.0 = Release|iPhone
 		{9D1AD12F-4893-4471-B5B5-F7F976222765}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{9D1AD12F-4893-4471-B5B5-F7F976222765}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
-		{EA4EF36B-35D4-4057-9150-A5129987BE1A}.Ad-Hoc|Any CPU.ActiveCfg = Ad-Hoc|iPhone
-		{EA4EF36B-35D4-4057-9150-A5129987BE1A}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
-		{EA4EF36B-35D4-4057-9150-A5129987BE1A}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
-		{EA4EF36B-35D4-4057-9150-A5129987BE1A}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Ad-Hoc|iPhoneSimulator
-		{EA4EF36B-35D4-4057-9150-A5129987BE1A}.Ad-Hoc|iPhoneSimulator.Build.0 = Ad-Hoc|iPhoneSimulator
-		{EA4EF36B-35D4-4057-9150-A5129987BE1A}.AppStore|Any CPU.ActiveCfg = AppStore|iPhone
-		{EA4EF36B-35D4-4057-9150-A5129987BE1A}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
-		{EA4EF36B-35D4-4057-9150-A5129987BE1A}.AppStore|iPhone.Build.0 = AppStore|iPhone
-		{EA4EF36B-35D4-4057-9150-A5129987BE1A}.AppStore|iPhoneSimulator.ActiveCfg = AppStore|iPhoneSimulator
-		{EA4EF36B-35D4-4057-9150-A5129987BE1A}.AppStore|iPhoneSimulator.Build.0 = AppStore|iPhoneSimulator
-		{EA4EF36B-35D4-4057-9150-A5129987BE1A}.Debug|Any CPU.ActiveCfg = Debug|iPhone
-		{EA4EF36B-35D4-4057-9150-A5129987BE1A}.Debug|iPhone.ActiveCfg = Debug|iPhone
-		{EA4EF36B-35D4-4057-9150-A5129987BE1A}.Debug|iPhone.Build.0 = Debug|iPhone
-		{EA4EF36B-35D4-4057-9150-A5129987BE1A}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
-		{EA4EF36B-35D4-4057-9150-A5129987BE1A}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
-		{EA4EF36B-35D4-4057-9150-A5129987BE1A}.Release|Any CPU.ActiveCfg = Release|iPhone
-		{EA4EF36B-35D4-4057-9150-A5129987BE1A}.Release|iPhone.ActiveCfg = Release|iPhone
-		{EA4EF36B-35D4-4057-9150-A5129987BE1A}.Release|iPhone.Build.0 = Release|iPhone
-		{EA4EF36B-35D4-4057-9150-A5129987BE1A}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
-		{EA4EF36B-35D4-4057-9150-A5129987BE1A}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{65455FC5-5B16-4195-82FD-30F8156ECFEB}.Ad-Hoc|Any CPU.ActiveCfg = Ad-Hoc|iPhone
 		{65455FC5-5B16-4195-82FD-30F8156ECFEB}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
 		{65455FC5-5B16-4195-82FD-30F8156ECFEB}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
