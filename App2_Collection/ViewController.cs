@@ -13,9 +13,10 @@ namespace App2_Collection
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            id_collection.BackgroundColor = UIColor.Gray;
+            id_collection.BackgroundColor = UIColor.White;
             id_collection.RegisterNibForCell(UINib.FromName("cellView", null), cellView.Key);
             id_collection.DataSource = new Datasrc();
+           
             // Perform any additional setup after loading the view, typically from a nib.
         }
 
@@ -32,7 +33,8 @@ namespace App2_Collection
         public override UICollectionViewCell GetCell(UICollectionView collectionView, NSIndexPath indexPath)
         {
             cellView cell = (cellView)collectionView.DequeueReusableCell(cellView.Key, indexPath);
-            
+
+
             return cell;
         }
 
