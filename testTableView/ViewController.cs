@@ -29,6 +29,18 @@ namespace testTableView
             images.Add(new imageList { pictures = "img4.jpg", name = "Legumes" });
             images.Add(new imageList { pictures = "img5.jpg", name = "Bulbs" });
             images.Add(new imageList { pictures = "img2.jpg", name = "Tubers" });
+            images.Add(new imageList { pictures = "img3.jpg", name = "Flower Buds" });
+            images.Add(new imageList { pictures = "img4.jpg", name = "Legumes" });
+            images.Add(new imageList { pictures = "img5.jpg", name = "Bulbs" });
+            images.Add(new imageList { pictures = "img2.jpg", name = "Tubers" });
+            images.Add(new imageList { pictures = "img3.jpg", name = "Flower Buds" });
+            images.Add(new imageList { pictures = "img4.jpg", name = "Legumes" });
+            images.Add(new imageList { pictures = "img5.jpg", name = "Bulbs" });
+            images.Add(new imageList { pictures = "img3.jpg", name = "Flower Buds" });
+            images.Add(new imageList { pictures = "img4.jpg", name = "Legumes" });
+            images.Add(new imageList { pictures = "img5.jpg", name = "Bulbs" });
+            images.Add(new imageList { pictures = "img2.jpg", name = "Tubers" });
+            images.Add(new imageList { pictures = "img2.jpg", name = "Tubers" });
 
             ImageviewMain.Image = UIImage.FromFile("Images/img1.jpg");
 
@@ -65,11 +77,10 @@ namespace testTableView
         {
             myTableCell cell = (myTableCell)tableView.DequeueReusableCell(myTableCell.Key);
 
-
             //---- if there are no cells to reuse, create a new one
             if (cell == null)
-            {  cell = (myTableCell)myTableCell.Create(); }
-           cell.label1txt = images.ElementAt(indexPath.Row).name;
+            { cell = (myTableCell)myTableCell.Create(); }
+            cell.label1txt = images.ElementAt(indexPath.Row).name;
             cell.ImageImg = images.ElementAt(indexPath.Row).pictures;
             return cell;
 
