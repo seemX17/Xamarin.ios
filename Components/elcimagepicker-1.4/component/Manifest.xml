@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<component format="1" id="elcimagepicker">
+  <name>ELCImagePicker</name>
+  <publisher>Dave Humphreys</publisher>
+  <publisher-url>https://github.com/newky2k/XamarinSharpPlus/tree/master/iOS/ELCImagePicker</publisher-url>
+  <src-url>https://github.com/newky2k/XamarinSharpPlus/tree/master/iOS/ELCImagePicker</src-url>
+  <version>1.4</version>
+  <summary>A Multi-Image picker that uses the asset library</summary>
+  <screenshots>
+    <img src="screenshots/Screen1.jpg" title="Screen1" />
+    <img src="screenshots/Screen2.jpg" title="Screen2" />
+  </screenshots>
+  <samples>
+    <sample id="ELCImagePickerSample">
+      <name>iOS Sample</name>
+      <summary>iOS Sample</summary>
+    </sample>
+  </samples>
+</component>
