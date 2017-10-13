@@ -3,12 +3,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
-    <ProjectGuid>{65455FC5-5B16-4195-82FD-30F8156ECFEB}</ProjectGuid>
+    <ProjectGuid>{F4987CC0-397D-43E0-98BC-0B6CC54D03C7}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>testTableView</RootNamespace>
+    <RootNamespace>App5_TabsView</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>testTableView</AssemblyName>
+    <AssemblyName>App5_TabsView</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -54,7 +54,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchArch>ARM64</MtouchArch>
     <ConsolePause>false</ConsolePause>
     <CodesignKey>iPhone Developer</CodesignKey>
   </PropertyGroup>
@@ -65,7 +65,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>False</ConsolePause>
-    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchArch>ARM64</MtouchArch>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <BuildIpa>True</BuildIpa>
     <CodesignProvision>Automatic:AdHoc</CodesignProvision>
@@ -78,42 +78,25 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>False</ConsolePause>
-    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchArch>ARM64</MtouchArch>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <CodesignProvision>Automatic:AppStore</CodesignProvision>
     <CodesignKey>iPhone Distribution</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="albumViewController.cs" />
-    <Compile Include="albumViewController.designer.cs">
-      <DependentUpon>albumViewController.cs</DependentUpon>
-    </Compile>
-    <Compile Include="dummy.cs" />
-    <Compile Include="dummy.designer.cs">
-      <DependentUpon>dummy.cs</DependentUpon>
-    </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="TabController.cs" />
+    <Compile Include="TabController.designer.cs">
+      <DependentUpon>TabController.cs</DependentUpon>
+    </Compile>
     <None Include="GettingStarted.Xamarin" />
     <None Include="Info.plist" />
-    <Compile Include="myTableCell.cs" />
-    <Compile Include="myTableCell.designer.cs">
-      <DependentUpon>myTableCell.cs</DependentUpon>
-    </Compile>
-    <Compile Include="myTableView.cs" />
-    <Compile Include="myTableView.designer.cs">
-      <DependentUpon>myTableView.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <InterfaceDefinition Include="myTableCell.xib" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ViewController.designer.cs">
-      <DependentUpon>ViewController.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ViewController.cs" />
     <InterfaceDefinition Include="Main.storyboard" />
-    <InterfaceDefinition Include="LaunchScreen.xib" />
+    <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -123,14 +106,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Entitlements.plist" />
-    <BundleResource Include="Images\img1.jpg" />
-    <BundleResource Include="Images\img5.jpg" />
-    <BundleResource Include="Images\img2.jpg" />
-    <BundleResource Include="Images\img3.jpg" />
-    <BundleResource Include="Images\img4.jpg" />
+    <BundleResource Include="icons8-Home-50.png" />
+    <BundleResource Include="icons8-Home-50 %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\Images.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\LaunchImages.launchimage\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

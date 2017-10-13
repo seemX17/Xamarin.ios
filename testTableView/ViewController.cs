@@ -8,7 +8,6 @@ namespace testTableView
 {
     public partial class ViewController : UIViewController
     {
-         
 
         public ViewController(IntPtr handle) : base(handle)
         {
@@ -44,7 +43,7 @@ namespace testTableView
 
             ImageviewMain.Image = UIImage.FromFile("Images/img1.jpg");
 
-            mytableView1.Source = new Datasrc(images);
+            mytableView1.Source = new Datasrc(images, this.NavigationController);
             // Perform any additional setup after loading the view, typically from a nib.
         }
 
@@ -65,12 +64,16 @@ namespace testTableView
     public class Datasrc : UITableViewSource
     {
         private List<imageList> images;
-
-        
+        private UINavigationController albumViewController;
 
         public Datasrc(List<imageList> images)
         {
             this.images = images;
+        }
+
+        public Datasrc(List<imageList> images, UINavigationController navigationController) : this(images)
+        {
+            this.albumViewController = navigationController;
         }
 
         public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
@@ -94,6 +97,13 @@ namespace testTableView
         public override nfloat GetHeightForRow(UITableView tableView, NSIndexPath indexPath)
         {
             return 150 ;
+
+        }
+
+        public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
+        {
+            dummy addImage = albumViewController.Storyboard.InstantiateViewController("dummy") as dummy; // initialising albumviewcontroller with the viewcontroller.
+            albumViewController.PushViewController(addImage, true);
 
         }
     }

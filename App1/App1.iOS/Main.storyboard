@@ -1,10 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6750" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1854">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1854">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--PhoneWord-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -18,21 +20,21 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBE-Ac-vcx">
                                 <rect key="frame" x="225" y="538" width="151" height="30"/>
-                                <color key="tintColor" colorSpace="calibratedRGB" red="0.84313725490196079" green="0.90588235294117647" blue="0.96078431372549022" alpha="1"/>
+                                <color key="tintColor" red="0.84313725490196079" green="0.90588235294117647" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Hello World, Click Me!">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleColor" colorSpace="calibratedRGB" red="0.035294117647058823" green="0.1803921568627451" blue="0.30196078431372547" alpha="1"/>
+                                    <color key="titleColor" red="0.035294117647058823" green="0.1803921568627451" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="448" translatesAutoresizingMaskIntoConstraints="NO" text="Enter Phoneword">
-                                <rect key="frame" x="122" y="174" width="132" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Phoneword" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="448">
+                                <rect key="frame" x="234.5" y="84" width="131.5" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="132" id="2391"/>
+                                    <constraint firstAttribute="width" secondItem="448" secondAttribute="height" multiplier="44:7" id="2392"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
-                                <constraints>
-                                    <constraint id="2391" firstItem="448" firstAttribute="width" constant="132"/>
-                                    <constraint id="2392" firstAttribute="width" secondItem="448" secondAttribute="height" multiplier="44:7"/>
-                                </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="2391"/>
@@ -46,77 +48,79 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1-855-XAMARIN" borderStyle="roundedRect" minimumFontSize="17" id="450" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="66" y="309" width="188" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1-855-XAMARIN" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="450">
+                                <rect key="frame" x="235.5" y="218.5" width="129" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="451" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="236" y="238" width="129" height="34"/>
-                                <color key="tintColor" colorSpace="calibratedRGB" red="0.10196078431372549" green="0.50980392156862742" blue="0.88235294117647056" alpha="1"/>
-                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.90588235294117647" green="0.40784313725490196" blue="0.40784313725490196" alpha="1"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="451">
+                                <rect key="frame" x="235.5" y="281.5" width="129" height="34"/>
+                                <color key="backgroundColor" red="0.90588235294117647" green="0.40784313725490196" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.10196078431372549" green="0.50980392156862742" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Translate">
-                                    <color key="titleShadowColor" colorSpace="calibratedRGB" red="0.2196078431372549" green="0.803921568627451" blue="0.403921568627451" alpha="1"/>
-                                    <color key="titleColor" colorSpace="calibratedRGB" red="0.00784313725490196" green="0.21568627450980393" blue="0.40784313725490196" alpha="1"/>
+                                    <color key="titleColor" red="0.0078431372549019607" green="0.21568627450980393" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.2196078431372549" green="0.80392156862745101" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="TranslateButton_TouchUpInside:" destination="BYZ-38-t0r" id="2995" eventType="touchUpInside"/>
+                                    <action selector="TranslateButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2995"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="452" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="452">
                                 <rect key="frame" x="169" y="339" width="30" height="30"/>
-                                <color key="tintColor" colorSpace="calibratedRGB" red="0" green="0.52549019607843139" blue="1" alpha="1"/>
+                                <color key="tintColor" red="0.0" green="0.52549019607843139" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Call">
-                                    <color key="titleColor" colorSpace="calibratedRGB" red="0.00784313725490196" green="0.090196078431372548" blue="0.17254901960784314" alpha="1"/>
+                                    <color key="titleColor" red="0.0078431372549019607" green="0.090196078431372548" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="CallButton_TouchUpInside:" destination="BYZ-38-t0r" id="2996" eventType="touchUpInside"/>
+                                    <action selector="CallButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2996"/>
                                 </connections>
-                                <variation key="heightClass=regular-widthClass=compact"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2398" translatesAutoresizingMaskIntoConstraints="NO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2398">
                                 <rect key="frame" x="119" y="399" width="132" height="30"/>
                                 <state key="normal" title="Call History">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleColor" colorSpace="calibratedRGB" red="0.031372549019607843" green="0.12941176470588237" blue="0.21176470588235294" alpha="1"/>
+                                    <color key="titleColor" red="0.031372549019607843" green="0.12941176470588237" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact">
-                                    <color key="tintColor" colorSpace="calibratedRGB" red="0.76078431372549016" green="0.85490196078431369" blue="0.93333333333333335" alpha="1"/>
-                                    <color key="backgroundColor" colorSpace="calibratedRGB" red="0.807843137254902" green="0.82352941176470584" blue="1" alpha="1"/>
+                                    <color key="backgroundColor" red="0.80784313725490198" green="0.82352941176470584" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="tintColor" red="0.76078431372549016" green="0.85490196078431369" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </variation>
                                 <connections>
-                                    <segue id="2715" destination="2576" kind="show"/>
+                                    <segue destination="2576" kind="show" id="2715"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedRGB" red="0.94509803921568625" green="0.85882352941176465" blue="0.85882352941176465" alpha="1"/>
+                        <color key="backgroundColor" red="0.94509803921568625" green="0.85882352941176465" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.84313725490196079" green="0.90588235294117647" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint id="1809" firstItem="448" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
-                            <constraint id="1810" firstItem="448" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20">
+                            <constraint firstItem="448" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1809"/>
+                            <constraint firstItem="448" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="1810">
                                 <variation key="heightClass=regular-widthClass=compact" constant="110"/>
                             </constraint>
-                            <constraint id="1811" firstItem="450" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
-                            <constraint id="1812" firstItem="450" firstAttribute="top" secondItem="448" secondAttribute="bottom" constant="114">
+                            <constraint firstItem="450" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1811"/>
+                            <constraint firstItem="450" firstAttribute="top" secondItem="448" secondAttribute="bottom" constant="114" id="1812">
                                 <variation key="heightClass=regular-widthClass=compact" constant="30"/>
                             </constraint>
-                            <constraint id="1815" firstItem="451" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
-                            <constraint id="1816" firstItem="451" firstAttribute="top" secondItem="450" secondAttribute="bottom" constant="33"/>
-                            <constraint id="1817" firstItem="451" firstAttribute="width" secondItem="450" secondAttribute="width"/>
-                            <constraint id="1820" firstItem="452" firstAttribute="top" secondItem="451" secondAttribute="bottom" constant="17"/>
-                            <constraint id="1821" firstItem="8bC-Xf-vdC" firstAttribute="centerX" secondItem="452" secondAttribute="centerX" constant="4"/>
-                            <constraint id="1822" firstItem="8bC-Xf-vdC" firstAttribute="centerX" secondItem="oBE-Ac-vcx" secondAttribute="centerX"/>
-                            <constraint id="1823" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="oBE-Ac-vcx" secondAttribute="bottom" constant="32"/>
-                            <constraint id="2389" firstItem="448" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
-                            <constraint id="2390" firstItem="448" firstAttribute="width" secondItem="450" secondAttribute="width"/>
-                            <constraint id="2395" firstItem="448" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
-                            <constraint id="2396" firstItem="448" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
-                            <constraint id="2425" firstItem="2398" firstAttribute="height" secondItem="452" secondAttribute="height"/>
-                            <constraint id="2429" firstItem="2398" firstAttribute="top" secondItem="451" secondAttribute="bottom" constant="77"/>
-                            <constraint id="2430" firstItem="8bC-Xf-vdC" firstAttribute="centerX" secondItem="2398" secondAttribute="centerX" constant="3"/>
-                            <constraint id="2572" firstItem="2398" firstAttribute="width" secondItem="451" secondAttribute="width"/>
+                            <constraint firstItem="451" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1815"/>
+                            <constraint firstItem="451" firstAttribute="top" secondItem="450" secondAttribute="bottom" constant="33" id="1816"/>
+                            <constraint firstItem="451" firstAttribute="width" secondItem="450" secondAttribute="width" id="1817"/>
+                            <constraint firstItem="452" firstAttribute="top" secondItem="451" secondAttribute="bottom" constant="17" id="1820"/>
+                            <constraint firstAttribute="centerX" secondItem="452" secondAttribute="centerX" constant="4" id="1821"/>
+                            <constraint firstAttribute="centerX" secondItem="oBE-Ac-vcx" secondAttribute="centerX" id="1822"/>
+                            <constraint firstAttribute="bottom" secondItem="oBE-Ac-vcx" secondAttribute="bottom" constant="32" id="1823"/>
+                            <constraint firstItem="448" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2389"/>
+                            <constraint firstItem="448" firstAttribute="width" secondItem="450" secondAttribute="width" id="2390"/>
+                            <constraint firstItem="448" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2395"/>
+                            <constraint firstItem="448" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2396"/>
+                            <constraint firstItem="2398" firstAttribute="height" secondItem="452" secondAttribute="height" id="2425"/>
+                            <constraint firstItem="2398" firstAttribute="top" secondItem="451" secondAttribute="bottom" constant="77" id="2429"/>
+                            <constraint firstAttribute="centerX" secondItem="2398" secondAttribute="centerX" constant="3" id="2430"/>
+                            <constraint firstItem="2398" firstAttribute="width" secondItem="451" secondAttribute="width" id="2572"/>
                         </constraints>
-                        <color key="tintColor" colorSpace="calibratedRGB" red="0.84313725490196079" green="0.90588235294117647" blue="0.96078431372549022" alpha="1"/>
                         <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="2398"/>
+                            </mask>
                             <mask key="constraints">
                                 <exclude reference="2389"/>
                                 <exclude reference="2390"/>
@@ -127,11 +131,11 @@
                                 <exclude reference="2430"/>
                                 <exclude reference="2572"/>
                             </mask>
-                            <mask key="subviews">
-                                <exclude reference="2398"/>
-                            </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="2398"/>
+                            </mask>
                             <mask key="constraints">
                                 <include reference="2389"/>
                                 <include reference="2390"/>
@@ -142,52 +146,51 @@
                                 <include reference="2430"/>
                                 <include reference="2572"/>
                             </mask>
-                            <mask key="subviews">
-                                <include reference="2398"/>
-                            </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="PhoneWord" id="2368"/>
                     <connections>
                         <outlet property="Button" destination="oBE-Ac-vcx" id="OkX-0Z-gth"/>
-                        <outlet property="label1" destination="448" id="name-outlet-448"/>
+                        <outlet property="CallButton" destination="452" id="name-outlet-452"/>
                         <outlet property="PhoneNumberText" destination="450" id="name-outlet-450"/>
                         <outlet property="TranslateButton" destination="451" id="name-outlet-451"/>
-                        <outlet property="CallButton" destination="452" id="name-outlet-452"/>
+                        <outlet property="label1" destination="448" id="name-outlet-448"/>
                     </connections>
-                    <navigationItem title="PhoneWord" id="2368" key="navigationItem"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="34" y="-519"/>
         </scene>
+        <!--Navigation Controller-->
         <scene sceneID="1853">
             <objects>
-                <navigationController id="1854" sceneMemberID="viewController">
+                <navigationController id="1854" sceneMemberID="viewController" customClass="albumViewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1856">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue id="2369" destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2369"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1857" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-389" y="-522"/>
+            <point key="canvasLocation" x="-693" y="-545"/>
         </scene>
+        <!--Call History-->
         <scene sceneID="2575">
             <objects>
-                <tableViewController id="2576" sceneMemberID="viewController" customClass="CallHistoryController" title="Call History">
+                <tableViewController title="Call History" id="2576" customClass="CallHistoryController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="2577">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2580">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2580" id="2581">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -200,10 +203,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2582" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="465" y="-525"/>
+            <point key="canvasLocation" x="748" y="-549"/>
         </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedScreenMetrics key="destination" type="retina47"/>
-    </simulatedMetricsContainer>
 </document>

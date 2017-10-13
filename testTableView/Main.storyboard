@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="651">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6090">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="650">
             <objects>
-                <viewController id="651" sceneMemberID="viewController" customClass="ViewController">
+                <viewController id="651" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="648"/>
                         <viewControllerLayoutGuide type="bottom" id="649"/>
@@ -16,11 +17,13 @@
                     <view key="view" contentMode="scaleToFill" id="652">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.35294117647058826" green="0.35294117647058826" blue="0.35294117647058826" alpha="1"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="655" translatesAutoresizingMaskIntoConstraints="NO" customClass="myTableView">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="655" customClass="myTableView">
                                 <rect key="frame" x="25" y="134" width="326" height="500"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="326" id="922"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="656">
                                         <rect key="frame" x="0.0" y="28" width="326" height="44"/>
@@ -29,44 +32,75 @@
                                             <rect key="frame" x="0.0" y="0.0" width="326" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue id="8347" destination="4590" kind="push"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <constraints>
-                                    <constraint id="922" firstItem="655" firstAttribute="width" constant="326"/>
-                                </constraints>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3139" translatesAutoresizingMaskIntoConstraints="NO">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3139">
                                 <rect key="frame" x="36" y="20" width="303" height="100"/>
                                 <constraints>
-                                    <constraint id="3150" firstItem="3139" firstAttribute="height" constant="100"/>
+                                    <constraint firstAttribute="height" constant="100" id="3150"/>
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <color key="backgroundColor" red="0.35294117647058826" green="0.35294117647058826" blue="0.35294117647058826" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint id="659" firstItem="655" firstAttribute="leading" secondItem="652" secondAttribute="leadingMargin" constant="9"/>
-                            <constraint id="660" firstItem="652" firstAttribute="trailingMargin" secondItem="655" secondAttribute="trailing" constant="8"/>
-                            <constraint id="661" firstItem="652" firstAttribute="bottom" secondItem="655" secondAttribute="bottom" constant="33"/>
-                            <constraint id="2194" firstItem="652" firstAttribute="trailingMargin" secondItem="655" secondAttribute="trailing" constant="8"/>
-                            <constraint id="2203" firstItem="655" firstAttribute="leading" secondItem="652" secondAttribute="leadingMargin" constant="9"/>
-                            <constraint id="3144" firstItem="655" firstAttribute="top" secondItem="3139" secondAttribute="bottom" constant="14"/>
-                            <constraint id="3146" firstItem="3139" firstAttribute="top" secondItem="652" secondAttribute="top" constant="20"/>
-                            <constraint id="3147" firstItem="3139" firstAttribute="leading" secondItem="652" secondAttribute="leadingMargin" constant="20"/>
-                            <constraint id="3148" firstItem="652" firstAttribute="trailingMargin" secondItem="3139" secondAttribute="trailing" constant="20"/>
+                            <constraint firstItem="655" firstAttribute="leading" secondItem="652" secondAttribute="leadingMargin" constant="9" id="659"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="655" secondAttribute="trailing" constant="8" id="660"/>
+                            <constraint firstAttribute="bottom" secondItem="655" secondAttribute="bottom" constant="33" id="661"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="655" secondAttribute="trailing" constant="8" id="2194"/>
+                            <constraint firstItem="655" firstAttribute="leading" secondItem="652" secondAttribute="leadingMargin" constant="9" id="2203"/>
+                            <constraint firstItem="655" firstAttribute="top" secondItem="3139" secondAttribute="bottom" constant="14" id="3144"/>
+                            <constraint firstItem="3139" firstAttribute="top" secondItem="652" secondAttribute="top" constant="20" id="3146"/>
+                            <constraint firstItem="3139" firstAttribute="leading" secondItem="652" secondAttribute="leadingMargin" constant="20" id="3147"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3139" secondAttribute="trailing" constant="20" id="3148"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="mytableView1" destination="655" id="name-outlet-655"/>
                         <outlet property="ImageviewMain" destination="3139" id="name-outlet-3139"/>
+                        <outlet property="mytableView1" destination="655" id="name-outlet-655"/>
                     </connections>
+                    <navigationItem title="Title" id="6198" key="navigationItem"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="653" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="230" y="-68"/>
         </scene>
+        <scene sceneID="4589">
+            <objects>
+                <viewController id="4590" sceneMemberID="viewController" customClass="dummy" storyboardIdentifier="dummy">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4587"/>
+                        <viewControllerLayoutGuide type="bottom" id="4588"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4591">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4592" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="831" y="-71"/>
+        </scene>
+        <scene sceneID="6089">
+            <objects>
+                <navigationController id="6090" sceneMemberID="viewController" customClass="albumViewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6092">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="6199" destination="651" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6093" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-296" y="-109"/>
+        </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedScreenMetrics key="destination" type="retina47"/>
-    </simulatedMetricsContainer>
     <resources>
         <image name="Images/img1.jpg" width="1920" height="1080"/>
         <image name="Images/img2.jpg" width="1366" height="768"/>
@@ -74,4 +108,7 @@
         <image name="Images/img4.jpg" width="1920" height="1080"/>
         <image name="Images/img5.jpg" width="1920" height="1080"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina47"/>
+    </simulatedMetricsContainer>
 </document>
